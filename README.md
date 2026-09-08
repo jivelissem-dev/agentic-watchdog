@@ -147,30 +147,3 @@ it only needs each step to be a function that raises on failure.
    computer is on AC power" if this runs on a laptop.
 6. Click OK, then right-click the task → **Run** to test it immediately.
    Check `logs\watchdog_run_<date>.log`.
-
-## Part 4 — Publish to GitHub
-
-1. **Initialize the repo** (from inside the project folder):
-   ```powershell
-   git init
-   git add .
-   git commit -m "Initial commit: self-healing agentic pipeline watchdog"
-   ```
-2. **Create the repo on GitHub:** go to github.com → New repository →
-   name it `agentic-watchdog` → do NOT initialize with a README (you
-   already have one) → Create repository.
-3. **Push it:**
-   ```powershell
-   git remote add origin https://github.com/<your-username>/agentic-watchdog.git
-   git branch -M main
-   git push -u origin main
-   ```
-4. **Make the commit history tell a story.** Instead of one giant commit,
-   consider re-doing this in a few logical commits if you have time:
-   pipeline skeleton → remediation logic → learning/playbook →
-   LLM fallback → Slack escalation → PowerShell scheduler. A reviewer
-   skimming your commit log should be able to see the system get built
-   up in a sensible order — that's a signal in itself.
-5. **Add topics/tags on the GitHub repo page:** `python`, `automation`,
-   `agentic-ai`, `self-healing`, `sre`, `ollama` — these help it surface
-   in searches recruiters or engineers might run.
