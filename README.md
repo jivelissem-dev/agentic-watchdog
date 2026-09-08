@@ -174,18 +174,3 @@ it only needs each step to be a function that raises on failure.
 5. **Add topics/tags on the GitHub repo page:** `python`, `automation`,
    `agentic-ai`, `self-healing`, `sre`, `ollama` — these help it surface
    in searches recruiters or engineers might run.
-
-## How to talk about this in an interview or resume
-
-**Resume bullet:**
-> Built a self-healing Python watchdog that supervises pipeline execution,
-> automatically diagnoses and remediates failures (retry/backoff, stale
-> lock clearing, rate-limit handling), and escalates unresolvable errors —
-> with a learning playbook that improves fix selection over time based on
-> historical success rates.
-
-**If asked "walk me through it":** lead with the failure story, not the
-code — "the pipeline hits a transient error, the watchdog classifies it,
-checks what's worked before, applies that fix, and only pages a human if
-nothing works." Then point to `playbook.json` and the SQLite audit trail
-as the proof it's not just retry-blindly logic.
