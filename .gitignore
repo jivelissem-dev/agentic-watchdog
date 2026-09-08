@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+watchdog.db
+watchdog.db-*
+logs/*.log
+logs/last_output.json

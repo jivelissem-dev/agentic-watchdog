@@ -1,0 +1,11 @@
+{
+  "FileExistsError": {
+    "remediations": [
+      {
+        "name": "clear_temp_lock",
+        "successes": 1,
+        "failures": 0
+      }
+    ]
+  }
+}

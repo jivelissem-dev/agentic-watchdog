@@ -1,0 +1,12 @@
+{
+  "fetch_data": {
+    "exception": "ConnectionError",
+    "fail_times": 2,
+    "attempts_so_far": 2
+  },
+  "write_output": {
+    "exception": "FileExistsError",
+    "fail_times": 1,
+    "attempts_so_far": 1
+  }
+}
