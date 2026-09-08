@@ -5,6 +5,8 @@ diagnoses failures, applies fixes automatically, and escalates to a human
 only when it genuinely can't recover — while getting better at recovering
 on its own the more it runs.
 
+![Demo](Watchdog.gif)
+
 ## Why this exists
 
 Most "automation" demos show the happy path. This one is built around the
